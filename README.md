@@ -9,6 +9,41 @@ First of all, in order to install it you will need to execute this command :
     npm install
 Also make sure you have installed docker.
 
+Then you need to inform this file at the root of the project :
+
+testmybot.json
+
+    {
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "PROJECTNAME",
+      "BOTFRAMEWORK_API": true,
+      "BOTFRAMEWORK_APP_ID": "Your botframework app id",
+      "CONTAINERMODE": "docker",
+      "CLEANUPTEMPDIR": false,
+      "STARTCMD": "your personnal starting command"
+    },
+    "Sources": {
+      "GITURL": "Your chatbot's git repository",
+      "GITBRANCH": "Your branch to clone (if you need one)",
+      "GITPREPARECMD": "npm install",
+      "GITDIR": "./"
+    },
+    "Envs": {
+      "MICROSOFT_APP_ID": "Your microsoft app id",
+      "MICROSOFT_APP_PASSWORD": "Your microsoft app password",
+      "NODE_DEBUG": "botbuilder"
+    }
+  }
+}
+
+You also need to add your .env file into the project to copy it to the git repository.
+Place it like this ~/env/.env
+
+If you use typescript, your STARTCMD must copy the .env from /env/ to ./built/, here is my STARTCMD script for example :
+
+    "tsc && cd built && cp /env/.env . && node Server.js"
+
 To launch the emulator, use this command :
 
     npm run emulator
