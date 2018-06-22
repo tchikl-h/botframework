@@ -1,10 +1,10 @@
 # TestMyBot (Botframework)
 
 ## What is it ?
-Testmybot is a user friendly interface wich allow you to create functional tests for your chatbot.
+Testmybot is a user friendly interface which allow you to create functional tests for your chatbot.
 
 ## How to use it ?
-First of all, in order to install it you will need to execute these commands :
+First of all, in order to install it you will need to execute this command :
 
     npm install
 Also make sure you have installed docker.
@@ -24,6 +24,7 @@ When you wrote all your tests, you can launch it with the command :
     npm run test
 
 You will get an output similar to this :
+
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*NXTbHbmZtnubamumDEeMjw.png)
 
 sources :
