@@ -13,25 +13,25 @@ Then you need to inform this file at the root of the project :
 
 testmybot.json
 
-    {
+> {
   "botium": {
     "Capabilities": {
-      "PROJECTNAME": "PROJECTNAME",
+      "PROJECTNAME": "testmybot-sample-botframework",
       "BOTFRAMEWORK_API": true,
-      "BOTFRAMEWORK_APP_ID": "Your botframework app id",
+      "BOTFRAMEWORK_APP_ID": "29fae0da-73ba-4b55-bf98-e7778b42242f",
       "CONTAINERMODE": "docker",
       "CLEANUPTEMPDIR": false,
-      "STARTCMD": "your personnal starting command"
+      "STARTCMD": "npm run start"
     },
     "Sources": {
-      "GITURL": "Your chatbot's git repository",
-      "GITBRANCH": "Your branch to clone (if you need one)",
+      "GITURL": "https://expnantes.visualstudio.com/Expertime%20-%20Lilou/_git/Expertime%20-%20Lilou",
+      "GITBRANCH": "dev",
       "GITPREPARECMD": "npm install",
       "GITDIR": "./"
     },
     "Envs": {
-      "MICROSOFT_APP_ID": "Your microsoft app id",
-      "MICROSOFT_APP_PASSWORD": "Your microsoft app password",
+      "MICROSOFT_APP_ID": "29fae0da-73ba-4b55-bf98-e7778b42242f",
+      "MICROSOFT_APP_PASSWORD": "XS8oy}Or19cPE4G9",
       "NODE_DEBUG": "botbuilder"
     }
   }
