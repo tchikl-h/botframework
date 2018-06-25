@@ -18,7 +18,7 @@ testmybot.json
     "Capabilities": {
       "PROJECTNAME": "testmybot-sample-botframework",
       "BOTFRAMEWORK_API": true,
-      "BOTFRAMEWORK_APP_ID": "29fae0da-73ba-4b55-bf98-e7778b42242f",
+      "BOTFRAMEWORK_APP_ID": "",
       "CONTAINERMODE": "docker",
       "CLEANUPTEMPDIR": false,
       "STARTCMD": "npm run start"
@@ -30,8 +30,8 @@ testmybot.json
       "GITDIR": "./"
     },
     "Envs": {
-      "MICROSOFT_APP_ID": "29fae0da-73ba-4b55-bf98-e7778b42242f",
-      "MICROSOFT_APP_PASSWORD": "XS8oy}Or19cPE4G9",
+      "MICROSOFT_APP_ID": "",
+      "MICROSOFT_APP_PASSWORD": "",
       "NODE_DEBUG": "botbuilder"
     }
   }
